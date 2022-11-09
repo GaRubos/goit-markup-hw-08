@@ -1,0 +1,31 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.about .section-title {
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+  }
+  &__description {
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    padding: 27px 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $primary-bg-color;
+    background-color: $about-item-desc-color;
+  }
+}
