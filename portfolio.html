@@ -16,8 +16,9 @@
 
   <body>
     <!-- Шапка сайта -->
+
     <header class="header">
-      <div class="container">
+      <div class="container container-header">
         <nav class="site-nav">
           <!-- Логотип -->
           <a href="./index.html" class="site-logo link"
@@ -34,7 +35,7 @@
             <li class="site-nav__item"><a href="/" class="site-nav__link link">Контакти</a></li>
           </ul>
 
-          <button class="site-nav__burger-menu">
+          <button class="site-nav__burger-menu js-open-menu">
             <svg width="40" height="40" class="">
               <use href="./images/svg/icons.svg#icon-menu-burger"></use>
             </svg>
@@ -68,26 +69,26 @@
 
           <!-- кнопки выбора -->
           <ul class="button-list">
-            <li class="button-list__item">
+            <li class="button__item">
               <button type="button" class="button-list__button">Усі</button>
             </li>
-            <li class="button-list__item">
+            <li class="button__item">
               <button type="button" class="button-list__button">Веб-сайти</button>
             </li>
-            <li class="button-list__item">
+            <li class="button__item">
               <button type="button" class="button-list__button">Додатки</button>
             </li>
-            <li class="button-list__item">
+            <li class="button__item">
               <button type="button" class="button-list__button">Дизайн</button>
             </li>
-            <li class="button-list__item">
+            <li class="button__item">
               <button type="button" class="button-list__button">Маркетинг</button>
             </li>
           </ul>
 
           <!-- список продуктов -->
           <ul class="grid">
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -109,7 +110,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -131,7 +132,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -153,7 +154,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -175,7 +176,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -197,7 +198,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -219,7 +220,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -241,7 +242,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -263,7 +264,7 @@
                 </div>
               </a>
             </li>
-            <li class="grid-item list">
+            <li class="grid__item list">
               <a href="/" target="_blank" rel="noopener nofollow" class="grid-item__link link">
                 <div class="product">
                   <img
@@ -295,7 +296,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__body">
-          <div>
+          <div class="footer__address">
             <a href="./index.html" class="site-logo site-logo--margin-bottom link"
               >Web<span class="site-logo__studio-white">Studio</span></a
             >
@@ -322,7 +323,7 @@
             </address>
           </div>
 
-          <div>
+          <div class="footer__social">
             <p class="footer__social-title">приєднуйтесь</p>
             <ul class="social-list link">
               <li class="list">
@@ -360,7 +361,7 @@
             <p class="footer-form__title">Підпишіться на розсилку</p>
             <form name="subscribe-form" novalidate class="subscribe-form">
               <label for="email" class="footer-form__label"></label>
-              <input type="email" name="email" placeholder="E-mail" class="footer-form__input" />
+              <input type="email" class="footer-form__input" name="email" placeholder="E-mail" />
               <button type="submit" class="subscribe-form-btn">
                 Підписатися
                 <svg width="24" height="24" class="icon-send">
