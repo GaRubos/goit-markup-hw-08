@@ -261,11 +261,25 @@ body {
 }
 
 .container {
-  max-width: 100%;
-  width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .list {
@@ -993,7 +1007,13 @@ body.modal-open {
 }
 
 .about {
+  display: none;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
 }
 
 .about .section-title {
@@ -1025,30 +1045,32 @@ body.modal-open {
 }
 
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .benefits-list {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .benefits-list-list {
-    width: 270px;
-  }
-}
 .benefits-list__item {
-  width: 354px;
+  max-width: 450px;
   margin-bottom: 30px;
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits-list__item {
+    max-width: 354px;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .benefits-list__item {
     width: 270px;
+    margin-bottom: 0;
   }
 }
 .benefits-list__icon {
@@ -1105,6 +1127,11 @@ body.modal-open {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-Img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -1113,9 +1140,7 @@ body.modal-open {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #2196f3;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: 0 auto;
+    max-width: 1600px;
   }
 }
 
@@ -1153,23 +1178,26 @@ body.modal-open {
 }
 
 .clients {
-  padding: 94px 0 94px;
+  padding: 60px 0 60px;
 }
-
-.section-title {
-  margin-bottom: 50px;
-}
-
-.clients-list {
+.clients__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-
-.clients-box {
-  width: 170px;
-  height: 92px;
+.clients__item {
+  max-width: 210px;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    max-width: 226px;
+  }
+}
+.clients__link {
+  max-width: 210px;
+  height: auto;
   border: 1px solid #afb1b8;
   border-radius: 5px;
   display: flex;
@@ -1181,25 +1209,59 @@ body.modal-open {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-box:hover,
-.clients-box:focus {
+.section-title {
+  margin-bottom: 50px;
+}
+
+.clients__link:hover,
+.clients__link:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
+}
+.team__item {
+  max-width: 450px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list {
+    flex-wrap: nowrap;
+  }
+}
+.team__img {
+  width: 100%;
+  height: auto;
 }
 
 .team .section-title {
   margin-bottom: 50px;
-}
-
-.team-list {
-  display: flex;
-  justify-content: space-between;
 }
 
 .team .title {
@@ -1226,12 +1288,6 @@ body.modal-open {
 .team-card-text {
   background-color: #ffffff;
   padding: 30px;
-}
-
-.team-list-item {
-  background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .footer {
