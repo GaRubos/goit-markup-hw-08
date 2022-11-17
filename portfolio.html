@@ -35,9 +35,10 @@
             <li class="site-nav__item"><a href="/" class="site-nav__link link">Контакти</a></li>
           </ul>
 
-          <button class="site-nav__burger-menu js-open-menu">
-            <svg width="40" height="40" class="">
-              <use href="./images/svg/icons.svg#icon-menu-burger"></use>
+          <button type="button" class="menu-toggle js-open-menu" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="переключатель меню">
+              <use class="icon-menu-close" href="./images/svg/icons.svg#icon-menu-close"></use>
+              <use class="icon-menu-burger" href="./images/svg/icons.svg#icon-menu-burger"></use>
             </svg>
           </button>
         </nav>
