@@ -901,15 +901,25 @@ body.modal-open {
     flex-grow: 0;
   }
 }
-.site-nav__burger-menu {
+
+.menu-toggle {
+  display: inline-flex;
+  margin: 0;
   background: transparent;
   border: none;
   padding: 0;
 }
-@media screen and (min-width: 768px) {
-  .site-nav__burger-menu {
-    display: none;
-  }
+
+.menu-toggle .icon-menu-close {
+  display: none;
+}
+
+.menu-toggle.is-open .icon-menu-close {
+  display: block;
+}
+
+.menu-toggle.is-open .icon-menu-burger {
+  display: none;
 }
 
 .site-nav__list {

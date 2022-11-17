@@ -34,9 +34,10 @@
             <li class="site-nav__item"><a href="/" class="site-nav__link link">Контакти</a></li>
           </ul>
 
-          <button class="site-nav__burger-menu js-open-menu">
-            <svg width="40" height="40" class="">
-              <use href="./images/svg/icons.svg#icon-menu-burger"></use>
+          <button type="button" class="menu-toggle js-open-menu" aria-controls="mobile-menu">
+            <svg width="40" height="40" aria-label="переключатель меню">
+              <use class="icon-menu-close" href="./images/svg/icons.svg#icon-menu-close"></use>
+              <use class="icon-menu-burger" href="./images/svg/icons.svg#icon-menu-burger"></use>
             </svg>
           </button>
         </nav>
@@ -464,7 +465,7 @@
     </footer>
 
     <!-- Мобильное меню -->
-    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu" id="mobile-menu">
       <div class="container-mobile">
         <button class="mobile-menu__close-button js-close-menu">
           <svg width="40" height="40">
@@ -585,6 +586,13 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

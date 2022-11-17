@@ -19,17 +19,29 @@
     justify-content: space-between;
     flex-grow: 0;
   }
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
+}
 
-  &__burger-menu {
-    background: transparent;
-    border: none;
+.menu-toggle {
+  display: inline-flex;
+  margin: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
 
-    padding: 0;
+.menu-toggle .icon-menu-close {
+  display: none;
+}
 
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
+.menu-toggle.is-open .icon-menu-close {
+  display: block;
+}
+
+.menu-toggle.is-open .icon-menu-burger {
+  display: none;
 }
 
 .site-nav__list {
