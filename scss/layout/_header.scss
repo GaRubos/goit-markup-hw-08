@@ -24,26 +24,6 @@
   // }
 }
 
-.menu-toggle {
-  display: inline-flex;
-  margin: 0;
-  background: transparent;
-  border: none;
-  padding: 0;
-}
-
-.menu-toggle .icon-menu-close {
-  display: none;
-}
-
-.menu-toggle.is-open .icon-menu-close {
-  display: block;
-}
-
-.menu-toggle.is-open .icon-menu-burger {
-  display: none;
-}
-
 .site-nav__list {
   display: none;
 

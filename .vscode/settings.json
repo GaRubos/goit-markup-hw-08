@@ -14,5 +14,6 @@
   "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["defaults"],
-  "cSpell.words": ["навигация", "сайта"]
+  "cSpell.words": ["навигация", "сайта"],
+  "liveServer.settings.port": 5501
 }
