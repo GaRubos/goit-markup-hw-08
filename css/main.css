@@ -1209,6 +1209,7 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .clients__list {
@@ -1217,7 +1218,8 @@ body.modal-open {
   }
 }
 .clients__item {
-  width: 210px;
+  width: 100%;
+  max-width: 210px;
 }
 @media screen and (min-width: 768px) {
   .clients__item {
@@ -1226,7 +1228,7 @@ body.modal-open {
 }
 .clients__link {
   max-width: 210px;
-  height: auto;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 5px;
   display: flex;
@@ -1253,11 +1255,16 @@ body.modal-open {
   padding-bottom: 60px;
   background: #f5f4fa;
 }
+.team__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 @media screen and (min-width: 768px) {
   .team__list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: space-between;
   }
 }
@@ -1287,16 +1294,11 @@ body.modal-open {
     margin-bottom: 30px;
   }
 }
-.team__img {
-  width: 100%;
-  height: auto;
+.team__card-text {
+  background-color: #ffffff;
+  padding: 30px;
 }
-
-.team .section-title {
-  margin-bottom: 50px;
-}
-
-.team .title {
+.team__card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.35;
@@ -1306,8 +1308,7 @@ body.modal-open {
   margin-top: 0;
   margin-bottom: 10px;
 }
-
-.team .descr {
+.team__card-descr {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -1315,11 +1316,6 @@ body.modal-open {
   color: #757575;
   margin-top: 0;
   margin-bottom: 16px;
-}
-
-.team-card-text {
-  background-color: #ffffff;
-  padding: 30px;
 }
 
 .footer {

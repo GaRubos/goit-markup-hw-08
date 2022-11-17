@@ -4,10 +4,13 @@
   background: $color-team-section;
 
   &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
     @media screen and (min-width: 768px) {
-      display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
-      gap: 30px;
       justify-content: space-between;
     }
     @media screen and (min-width: 1200px) {
@@ -36,38 +39,29 @@
     }
   }
 
-  &__img {
-    width: 100%;
-    height: auto;
+  &__card-text {
+    background-color: $white-color;
+    padding: 30px;
   }
-}
 
-.team .section-title {
-  margin-bottom: 50px;
-}
+  &__card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
 
-.team .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.35;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.team .descr {
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.team-card-text {
-  background-color: $white-color;
-  padding: 30px;
+  &__card-descr {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
 }
