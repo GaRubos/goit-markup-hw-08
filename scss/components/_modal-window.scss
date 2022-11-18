@@ -26,6 +26,7 @@
 
 .backdrop-modal {
   position: absolute;
+  top: 20px;
   max-width: 450px;
   padding: 40px;
   background-color: $primary-bg-color;
@@ -69,6 +70,7 @@ body.modal-open {
 /* form-modal */
 
 .form-modal__title {
+  margin-top: 0;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;

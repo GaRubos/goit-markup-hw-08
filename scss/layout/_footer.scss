@@ -7,15 +7,12 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: column;
-      gap: 50px;
-      justify-content: space-around;
+      justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
       align-items: baseline;
       justify-content: space-between;
-      flex-direction: row;
     }
   }
 
@@ -23,6 +20,7 @@
     @media screen and (max-width: 1199px) {
       text-align: center;
       margin-bottom: 60px;
+      margin-right: 160px;
     }
   }
 
@@ -122,6 +120,7 @@
 
     @media screen and (max-width: 1200px) {
       margin-bottom: 20px;
+      width: 450px;
     }
     @media screen and (min-width: 1200px) {
       margin-right: 20px;
