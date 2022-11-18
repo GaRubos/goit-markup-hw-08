@@ -1489,6 +1489,9 @@ body.modal-open {
 .footer .footer__form-btn:hover {
   background-color: #188ce8;
 }
+.footer .footer__form-btn:focus {
+  background-color: #188ce8;
+}
 .footer .icon-send {
   fill: #ffffff;
 }/*# sourceMappingURL=main.css.map */

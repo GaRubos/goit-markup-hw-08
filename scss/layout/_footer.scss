@@ -158,12 +158,10 @@
     &:hover {
       background-color: $button-hover-color;
     }
+    &:focus {
+      background-color: $button-hover-color;
+    }
   }
-
-  // .subscribe-form-btn:hover,
-  // .subscribe-form-btn:focus {
-  //   background-color: $button-hover-color;
-  // }
 
   .icon-send {
     fill: $primary-bg-color;
