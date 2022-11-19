@@ -56,7 +56,8 @@
   }
 
   &__contacts-list {
-    margin-bottom: auto;
+    // margin-bottom: auto;
+    margin-top: auto;
   }
 
   &__contacts-item {
@@ -83,6 +84,7 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin-top: auto;
   }
   &__socials-item {
     &:not(:last-child) {

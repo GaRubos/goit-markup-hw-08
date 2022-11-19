@@ -854,7 +854,7 @@ body.modal-open {
   color: #2196f3;
 }
 .mobile-menu__contacts-list {
-  margin-bottom: auto;
+  margin-top: auto;
 }
 .mobile-menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;
@@ -875,6 +875,7 @@ body.modal-open {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 .mobile-menu__socials-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
