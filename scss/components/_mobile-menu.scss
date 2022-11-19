@@ -15,7 +15,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
   }
 
   &__close-button {
@@ -27,7 +27,7 @@
   }
 
   &__nav {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
 
   &__item {
@@ -56,7 +56,7 @@
   }
 
   &__contacts-list {
-    margin-bottom: 64px;
+    margin-bottom: auto;
   }
 
   &__contacts-item {
@@ -82,6 +82,7 @@
   &__socials-list {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
   }
   &__socials-item {
     &:not(:last-child) {
