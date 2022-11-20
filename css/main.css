@@ -854,7 +854,7 @@ body.modal-open {
   color: #2196f3;
 }
 .mobile-menu__contacts-list {
-  margin-top: auto;
+  margin-bottom: 64px;
 }
 .mobile-menu__contacts-item:not(:last-child) {
   margin-bottom: 32px;
@@ -874,18 +874,21 @@ body.modal-open {
 .mobile-menu__socials-list {
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
-  margin-top: auto;
 }
 .mobile-menu__socials-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
 }
 .mobile-menu__socials-link {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu__socials-link {
+    font-size: 18px;
+  }
 }
 
 .header {

@@ -56,8 +56,7 @@
   }
 
   &__contacts-list {
-    // margin-bottom: auto;
-    margin-top: auto;
+    margin-bottom: 64px;
   }
 
   &__contacts-item {
@@ -76,15 +75,12 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
-
     color: #757575;
   }
 
   &__socials-list {
     display: flex;
     gap: 10px;
-    flex-wrap: wrap;
-    margin-top: auto;
   }
   &__socials-item {
     &:not(:last-child) {
@@ -93,9 +89,12 @@
     }
   }
   &__socials-link {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.02em;
     color: #2196f3;
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
   }
 }
