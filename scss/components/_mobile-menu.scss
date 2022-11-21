@@ -24,6 +24,12 @@
     right: 10px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    &:hover,
+    :focus {
+      border-color: $accent-color;
+      fill: $accent-color;
+    }
   }
 
   &__nav {
