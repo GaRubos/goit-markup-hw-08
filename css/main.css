@@ -450,7 +450,7 @@ p {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .grid__item {
   background: #ffffff;
@@ -480,7 +480,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.55;
