@@ -450,7 +450,12 @@ p {
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    justify-content: space-between;
+  }
 }
 .grid__item {
   background: #ffffff;
